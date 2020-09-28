@@ -1,1 +1,2 @@
-
+apiDefinitions:
+  alert: ./openapi.yaml
