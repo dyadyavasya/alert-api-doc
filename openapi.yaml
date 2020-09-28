@@ -1,1 +1,23 @@
-
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Business Travel Alerts API
+  termsOfService: 'https://alert.starliner.ru'
+  contact:
+    email: info@starliner.ru
+    url: 'https://www.starliner.ru'
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  x-logo:
+    url: 'https://apis.guru/openapi-template/logo.png'
+  description: >
+    Business Travel Alerts API
+tags:
+  - name: Echo
+    description: Проверка API
+servers:
+  - url: 'httpы://alert.starliner.ru/api/v1'
+paths:
+  /echo:
+    $ref: paths/echo.yaml
