@@ -1,0 +1,23 @@
+parameters:
+  - name: Airports
+    in: query
+    description: Аэропорты
+    schema:
+      type: string
+  get:
+    tags:
+      - Airports
+    summary: Получение информации по аэропортам
+    description: Этот метод предоставляет возможность получить информацию об аэропорте по его IATA-коду
+    parameters:
+      - name: iata_code
+        in: path
+        description IATA code
+        required: true
+        schema:
+          type: string
+    response:
+      '200':
+        desciption: Success
+      '404':
+        description: Airports not found

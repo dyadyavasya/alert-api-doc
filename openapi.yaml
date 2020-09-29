@@ -18,6 +18,7 @@ tags:
     description: Проверка API
 servers:
   - url: 'httpы://alert.starliner.ru/api/v1'
+  - url: 'httpы://alert-test.starliner.ru/api/v1'
 paths:
-  /echo:
-    $ref: paths/echo.yaml
+  /airports:
+    $ref: paths/airports.yaml
