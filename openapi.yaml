@@ -17,5 +17,5 @@ servers:
   - url: 'httpы://alert.starliner.ru/api/v1'
   - url: 'httpы://alert-test.starliner.ru/api/v1'
 paths:
-  /airports/{iataCode}:
+  /geography/airports/{iataCode}:
     $ref: paths/airports.yaml
