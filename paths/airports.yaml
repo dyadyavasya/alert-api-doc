@@ -18,6 +18,6 @@ get:
         type: string
   responses:
     '200':
-      desciption: Success
+      description: Success
     '404':
       description: Airports not found
