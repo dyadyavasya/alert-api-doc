@@ -10,15 +10,12 @@ info:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   x-logo:
-    url: 'https://apis.guru/openapi-template/logo.png'
+    url: 'https://alert.starliner.ru/themes/Coronavirus/assets/images/logos/logo-192.png'
   description: >
     Business Travel Alerts API
-tags:
-  - name: Echo
-    description: Проверка API
 servers:
   - url: 'httpы://alert.starliner.ru/api/v1'
   - url: 'httpы://alert-test.starliner.ru/api/v1'
 paths:
-  /airports:
+  /airports/{iataCode}:
     $ref: paths/airports.yaml
