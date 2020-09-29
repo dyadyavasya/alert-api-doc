@@ -4,8 +4,8 @@ get:
   summary: Получение информации по аэропортам
   description: Этот метод предоставляет возможность получить информацию об аэропорте по его IATA-коду
   parameters:
-    - name: iatacode
-      in: query
+    - name: iataCode
+      in: path
       description: IATA code
       required: true
       schema:
