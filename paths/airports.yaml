@@ -16,7 +16,7 @@ get:
       required: true
       schema:
         type: string
-  response:
+  responses:
     '200':
       desciption: Success
     '404':
