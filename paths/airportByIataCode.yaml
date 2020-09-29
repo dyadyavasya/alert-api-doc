@@ -1,8 +1,9 @@
 get:
   tags:
     - Airports
-  summary: Получение информации по аэропортам
+  summary: Получение информации об аэропорте
   description: Этот метод предоставляет возможность получить информацию об аэропорте по его IATA-коду
+  operationId: getAirportByIataCode
   parameters:
     - name: iataCode
       in: path
@@ -14,4 +15,4 @@ get:
     '200':
       description: Success
     '404':
-      description: Airports not found
+      description: Airport not found

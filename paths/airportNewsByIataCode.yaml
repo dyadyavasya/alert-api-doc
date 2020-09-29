@@ -1,0 +1,18 @@
+get:
+  tags:
+    - Airports
+  summary: Получение новостей по конкретному аэропорту
+  description: Этот метод предоставляет возможность получить все новости об аэропорте по его IATA-коду
+  operationId: getAirportNewsByIataCode
+  parameters:
+    - name: iataCode
+      in: path
+      description: IATA code
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+    '404':
+      description: Airport not found

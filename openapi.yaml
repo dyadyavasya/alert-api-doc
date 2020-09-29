@@ -5,7 +5,7 @@ info:
   termsOfService: 'https://alert.starliner.ru'
   contact:
     email: info@starliner.ru
-    url: 'https://www.starliner.ru'
+    url: 'https://alert.starliner.ru'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
@@ -13,9 +13,16 @@ info:
     url: 'https://alert.starliner.ru/themes/Coronavirus/assets/images/logos/logo-192.png'
   description: >
     Business Travel Alerts API
+tags:
+  - name: Aiports
+    description: Сервисы API по аэропортам
 servers:
-  - url: 'httpы://alert.starliner.ru/api/v1'
-  - url: 'httpы://alert-test.starliner.ru/api/v1'
+  - url: 'https://alert.starliner.ru/api/v1'
+    description: Production server
+  - url: 'https://alert-test.starliner.ru/api/v1'
+    description: Staging server
 paths:
   /geography/airports/{iataCode}:
-    $ref: paths/airports.yaml
+    $ref: paths/airportByIataCode.yaml
+  /geography/airports/{iataCode}/news:
+    $ref: paths/airportNewsByIataCode.yaml
