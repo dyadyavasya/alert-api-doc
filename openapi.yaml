@@ -14,7 +14,7 @@ info:
   description: >
     Business Travel Alerts API
 tags:
-  - name: Aiports
+  - name: Airports
     description: Сервисы API по аэропортам
 servers:
   - url: 'https://alert.starliner.ru/api/v1'
