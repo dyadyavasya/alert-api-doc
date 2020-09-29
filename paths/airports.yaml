@@ -12,7 +12,7 @@ get:
   parameters:
     - name: iata_code
       in: path
-      description IATA code
+      description: IATA code
       required: true
       schema:
         type: string
