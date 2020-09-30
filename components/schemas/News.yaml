@@ -1,0 +1,9 @@
+title: Новости
+type: object
+properties:
+  title:
+    type: string
+    description: Заголовок новости
+  content:
+    type: string
+    description: Текст новости

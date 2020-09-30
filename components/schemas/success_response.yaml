@@ -12,5 +12,6 @@ properties:
     items:
       oneOf:
         - $ref: Airport.yaml
+        - $ref: News.yaml
 
     description: Массив с данными
