@@ -16,6 +16,10 @@ info:
 tags:
   - name: Airports
     description: Сервисы API по аэропортам
+components:
+  schemas:
+    Airport:
+      $ref: /'#/components/schemas/Airport'
 servers:
   - url: 'https://alert.starliner.ru/api/v1'
     description: Production server
