@@ -11,6 +11,6 @@ properties:
     type: array
     items:
       oneOf:
-        - $ref: ../components/schemas/Airport.yaml
+        - $ref: '#/components/schemas/Airport.yaml'
 
     description: Массив с данными
