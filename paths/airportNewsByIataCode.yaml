@@ -17,10 +17,10 @@ get:
       content:
         applicatino/json:
           schema:
-            $ref: ../components/schemas/success_response.yaml
+            $ref: ../components/schemas/default_response.yaml
     '404':
       description: Аэропорт не найден
       content:
         applicatino/json:
           schema:
-            $ref: ../components/schemas/error_response.yaml
+            $ref: ../components/schemas/default_response.yaml

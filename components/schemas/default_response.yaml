@@ -1,4 +1,4 @@
-title: Успешный ответ
+title: Ответ
 type: object
 properties:
   status_code:
@@ -9,9 +9,4 @@ properties:
     description: Сообщение ответа
   data:
     type: array
-    items:
-      oneOf:
-        - $ref: Airport.yaml
-        - $ref: News.yaml
-
     description: Массив с данными
