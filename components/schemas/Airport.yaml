@@ -19,3 +19,5 @@ properties:
   longitude:
     type: number
     description: Долгота
+  country:
+    $ref: 'Country.yaml'

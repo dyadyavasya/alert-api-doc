@@ -1,0 +1,15 @@
+title: Страна
+type: object
+properties:
+  id:
+    type: integer
+    description: Идентификатор страны в справочнике
+  code:
+    type: string
+    description: Международный код странцы
+  name_ru:
+    type: string
+    description: Название страны по-русски
+  name_en:
+    type: string
+    description: Название страны по-английски
