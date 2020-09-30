@@ -13,6 +13,14 @@ get:
         type: string
   responses:
     '200':
-      description: Success
+      description: Успешный ответ
+      content:
+        applicatino/json:
+          schema:
+            $ref: ../components/schemas/success_response.yaml
     '404':
-      description: Airport not found
+      description: Аэропорт не найден
+      content:
+        applicatino/json:
+          schema:
+            $ref: ../components/schemas/error_response.yaml

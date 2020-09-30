@@ -9,4 +9,8 @@ properties:
     description: Сообщение ответа
   data:
     type: array
+    items:
+      oneOf:
+        - $ref: ../components/schemas/
+
     description: Массив с данными

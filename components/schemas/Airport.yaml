@@ -1,0 +1,21 @@
+title: Аэропорт
+type: object
+properties:
+  id:
+    type: integer
+    description: Идентификатор аэропорта в справочнике
+  iata_code:
+    type: string
+    description: ИАТА-код аэропорта
+  name_ru:
+    type: string
+    description: Название аэропорта по-русски
+  name_en:
+    type: string
+    description: Название аэропорта по-английски
+  latitude:
+    type: number
+    description: Широта
+  longitude:
+    type: number
+    description: Долгота
