@@ -19,7 +19,7 @@ tags:
 components:
   schemas:
     Airport:
-      $ref: /'#/components/schemas/Airport'
+      $ref: /components/schemas/Airport.yaml
 servers:
   - url: 'https://alert.starliner.ru/api/v1'
     description: Production server
