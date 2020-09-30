@@ -13,12 +13,10 @@ get:
         type: string
   responses:
     '200':
-      description: Успешный ответ
+      description: Информация об аэропорте
       content:
         applicatino/json:
           schema:
-            type: array
-            items:
               $ref: '../components/schemas/Airport.yaml'
     '404':
       description: Аэропорт не найден
