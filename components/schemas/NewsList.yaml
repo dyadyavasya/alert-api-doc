@@ -1,0 +1,11 @@
+title: Список новостей
+type: object
+properties:
+  current_page:
+    type: integer
+    description: Номер текущей страницы
+  data:
+    type: array
+    description: Список новостей
+    items:
+      $ref: News.yaml

@@ -1,0 +1,12 @@
+title: Категория
+type: object
+properties:
+  id:
+    type: integer
+    description: Идентификатор категории
+  name:
+    type: string
+    description: Название категории
+  slug:
+    type: string
+    description: Ссылка на категорию

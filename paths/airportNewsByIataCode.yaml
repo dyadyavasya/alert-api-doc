@@ -11,13 +11,19 @@ get:
       required: true
       schema:
         type: string
+    - name: page
+      in: query
+      description: Номер страницы
+      reguired: false
+      schema:
+        type: integer
   responses:
     '200':
       description: Успешный ответ
       content:
         applicatino/json:
           schema:
-            $ref: ../components/schemas/default_response.yaml
+            $ref: ../components/schemas/NewsList.yaml
     '404':
       description: Аэропорт не найден
       content:

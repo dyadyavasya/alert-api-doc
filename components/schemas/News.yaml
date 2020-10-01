@@ -1,9 +1,29 @@
 title: Новости
 type: object
 properties:
+  id:
+    type: integer
+    description: Идентификатор новости
   title:
     type: string
     description: Заголовок новости
+  introductory:
+    type: string
+    description: Вступление новости
   content:
     type: string
-    description: Текст новости
+    description: Основной контент новости
+  slug:
+    type: string
+    description: Ссылка на новость
+  tags:
+    type: string
+    description: Теги
+  published_at:
+    type: string
+      description: Дата публикации
+  category_id:
+    type: integer
+      description: Идентификатор категории
+  category:
+    $ref: Category.yaml
