@@ -21,9 +21,9 @@ properties:
     description: Теги
   published_at:
     type: string
-      description: Дата публикации
+    description: Дата публикации
   category_id:
     type: integer
-      description: Идентификатор категории
+    description: Идентификатор категории
   category:
     $ref: Category.yaml
