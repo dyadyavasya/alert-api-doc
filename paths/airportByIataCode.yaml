@@ -16,8 +16,7 @@ get:
       description: Информация об аэропорте
       content:
         applicatino/json:
-          schema:
-              $ref: '../components/schemas/Airport.yaml'
+          schema: Airport
     '404':
       description: Аэропорт не найден
       content:
