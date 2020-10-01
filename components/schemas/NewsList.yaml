@@ -9,3 +9,33 @@ properties:
     description: Список новостей
     items:
       $ref: News.yaml
+  from:
+    type: integer
+    descripton: Номер новости по порядку, с которой начинается текущая страница
+  to:
+    type: integer
+    descripton: Номер новости по порядку, на которой заканчивается текущая страницу
+  total:
+    type: integer
+    descripton: Всего новостей
+  per_page:
+    type: integer
+    description: Количество новостей на странице
+  first_page_url:
+    type: string
+    descripton: Ссылка на первую страницу
+  last_page:
+    type: integer
+    descripton: Номер последней страницы
+  last_page_url:
+    type: string
+    descripton: Ссылка на последнюю страницу
+  next_page_url:
+    type: string
+    descripton: Ссылка на следующую страницу (null - если следующей нет)
+  prev_page_url:
+    type: string
+    descripton: Ссылка на предыдущую страницу (null - если предыдущей нет)
+  path:
+    type: string
+    descripton: Путь к странице
