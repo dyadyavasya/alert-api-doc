@@ -1,0 +1,26 @@
+get:
+  tags:
+    - Country
+  summary: Получение информации по стране
+  description: Этот метод предоставляет возможность получить информацию по стране по её идентификатору
+  operationId: getCountry
+  parameters:
+    - name: id
+      in: path
+      description: Идентификатор страны
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Информация о стране
+      content:
+        applicatino/json:
+          schema:
+              $ref: '../components/schemas/Country.yaml'
+    '404':
+      description: Страна не найдена
+      content:
+        applicatino/json:
+          schema:
+            $ref: ../components/schemas/default_response.yaml

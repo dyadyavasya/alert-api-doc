@@ -16,6 +16,8 @@ info:
 tags:
   - name: Airports
     description: Сервисы API по аэропортам
+  - name: Country
+    description: Сервисы API по странам
 components:
   schemas:
     Airport:
@@ -36,3 +38,7 @@ paths:
     $ref: paths/airportByIataCode.yaml
   /geography/airports/{iataCode}/news:
     $ref: paths/airportNewsByIataCode.yaml
+  /geography/country/{id}:
+    $ref: paths/country.yaml
+  /geography/country/{id}/news:
+    $ref: paths/countryNews.yaml

@@ -1,0 +1,31 @@
+get:
+  tags:
+    - Country
+  summary: Получение новостей по конкретной стране
+  description: Этот метод предоставляет возможность получить все новости по стране по её идентификатору
+  operationId: getCountryNews
+  parameters:
+    - name: id
+      in: path
+      description: Идентификатор страны
+      required: true
+      schema:
+        type: string
+    - name: page
+      in: query
+      description: Номер страницы
+      schema:
+        type: integer
+  responses:
+    '200':
+      description: Успешный ответ
+      content:
+        applicatino/json:
+          schema:
+            $ref: ../components/schemas/NewsList.yaml
+    '404':
+      description: Аэропорт не найден
+      content:
+        applicatino/json:
+          schema:
+            $ref: ../components/schemas/default_response.yaml
