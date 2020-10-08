@@ -41,7 +41,8 @@ function printRequestForm(swaggerJson, path, method) {
     .attr("value", method)
     .appendTo(form)
   $("<p>").appendTo(form)
-
+  console.log(swaggerJson);
+  console.log(path);
   swaggerJson["paths"][path][method]['parameters'].map(
     param => {
       var label = param.in == 'query' ? '&' + param.name + '='
@@ -109,7 +110,7 @@ $(document).ready(() => {
 
 
   setTimeout(() => {
-    $('.http-verb').toArray().map(c =>$(c).parent().append($('<p>')).append($("<div style='border-radius: 5px; background: white; padding: 5px; width:50px; color: black;' class='try-out'>try-out</div>")))
+    $('.http-verb').toArray().map(c =>$(c).parent().append($('<p>')).append($("<div style='border-radius: 5px; background: white; padding: 5px; width:100px; color: black;' class='try-out'>Send request</div>")))
     $('.try-out').click((event) => {
       verbNode = $($(event.target).parent().children()[0])
       var method = verbNode.text().trim();

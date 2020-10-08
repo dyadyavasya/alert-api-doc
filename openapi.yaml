@@ -35,7 +35,32 @@ servers:
     description: Staging server
 paths:
   /geography/airports/{iataCode}:
-    $ref: paths/airportByIataCode.yaml
+    get:
+      tags:
+        - Airports
+      summary: Получение информации об аэропорте
+      description: Этот метод предоставляет возможность получить информацию об аэропорте по его IATA-коду
+      operationId: getAirportByIataCode
+      parameters:
+        - name: iataCode
+          in: path
+          description: IATA code
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Информация об аэропорте
+          content:
+            applicatino/json:
+              schema:
+                $ref: '../components/schemas/Airport.yaml'
+        '404':
+          description: Аэропорт не найден
+          content:
+            applicatino/json:
+              schema:
+                $ref: ../components/schemas/default_response.yaml
   /geography/airports/{iataCode}/news:
     $ref: paths/airportNewsByIataCode.yaml
   /geography/country/{id}:
